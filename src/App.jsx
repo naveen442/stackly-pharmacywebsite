@@ -52,11 +52,11 @@ function App() {
     <PharmacyTagBar/>
       <Routes>
         <Route path="/" element={<FirstPage />} />
-        <Route path="/second" element={<SecondPage />} />
-        <Route path="/third" element={<ThirdPage />} />
-        <Route path="/fourth" element={<FourthPage />} />
-        <Route path="/fifth" element={<FifthPage />} />
-        <Route path="/sixth" element={<SixthPage />} />
+        <Route path="/vitamins" element={<SecondPage />} />
+        <Route path="/Beauty" element={<ThirdPage />} />
+        <Route path="/Hygiene" element={<FourthPage />} />
+        <Route path="/Lenses" element={<FifthPage />} />
+        <Route path="/Mother-&-Child" element={<SixthPage />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

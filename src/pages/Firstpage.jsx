@@ -22,7 +22,7 @@ const Firstpage = () => {
    <MonthlyDeals/>
   <HowWeWork/>
    <PharmacyRating/>
-       <OurPartners/>
+    <OurPartners/>
    <AboutCompany/>
    <AlphabetSearch/>
    <KnowledgeBase/>

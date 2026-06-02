@@ -13,37 +13,31 @@ import motherChild from "../assets/Images/motherChild.svg";
 import medSupplies from "../assets/Images/medSupplies.svg";
 import petProducts from "../assets/Images/petProducts.svg";
 import medEquipment from "../assets/Images/medEquipment.svg";
+import { Link } from "react-router-dom";
 
-const NAV_ITEMS = [
-  { label: "Medicines",              icon: medical },
-  { label: "Vitamins & Supplements", icon: vitamins },
-  { label: "Beauty",                 icon: beauty },
-  { label: "Hygiene",                icon: hygiene },
-  { label: "Lenses",                 icon: lenses },
-  { label: "Mother & Child",         icon: motherChild },
-  { label: "Med Supplies",           icon: medSupplies },
-  { label: "Pet Products",           icon: petProducts },
-  { label: "Med Equipment",          icon: medEquipment },
-];
 // const NAV_ITEMS = [
-//   { label: "Medicines", icon:"" },
-//   { label: "Vitamins & Supplements", icon: "🌿" },
-//   { label: "Beauty", icon: "✨" },
-//   { label: "Hygiene", icon: "🧴" },
-//   { label: "Lenses", icon: "👁️" },
-//   { label: "Mother & Child", icon: "🍼" },
-//   { label: "Med Supplies", icon: "🩹" },
-//   { label: "Pet Products", icon: "🐾" },
-//   { label: "Med Equipment", icon: "🩺" },
+//   { label: "Medicines",              icon: medical },
+//   { label: "Vitamins & Supplements", icon: vitamins },
+//   { label: "Beauty",                 icon: beauty },
+//   { label: "Hygiene",                icon: hygiene },
+//   { label: "Lenses",                 icon: lenses },
+//   { label: "Mother & Child",         icon: motherChild },
+//   { label: "Med Supplies",           icon: medSupplies },
+//   { label: "Pet Products",           icon: petProducts },
+//   { label: "Med Equipment",          icon: medEquipment },
 // ];
 
-// SVG Icons
-// const LocationIcon = () => (
-//   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-//     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-//   </svg>
-// );
-
+const NAV_ITEMS = [
+  { label: "Medicines",              icon: medical,      path: "/" },
+  { label: "Vitamins & Supplements", icon: vitamins,     path: "/vitamins" },
+  { label: "Beauty",                 icon: beauty,       path: "/Beauty" },
+  { label: "Hygiene",                icon: hygiene,      path: "/Hygiene" },
+  { label: "Lenses",                 icon: lenses,       path: "/Lenses" },
+  { label: "Mother & Child",         icon: motherChild,  path: "/Mother-&-Child" },
+  { label: "Med Supplies",           icon: medSupplies,  path: "/med-supplies" },
+  { label: "Pet Products",           icon: petProducts,  path: "/pet-products" },
+  { label: "Med Equipment",          icon: medEquipment, path: "/med-equipment" },
+];
 const LocationIcon = () => (
   <img
     src={Location}
@@ -199,7 +193,7 @@ export default function PharmacyHeader() {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-screen-xl mx-auto px-4 py-1.5 flex items-center justify-between flex-wrap gap-y-1">
           {/* Left */}
-          <div className="flex items-center gap-4 margin-left:-200px !important">
+          <div className="flex items-center gap-4 -ml-[200px]">
             <button className="flex items-center gap-1.5 text-gray-600 text-xs hover:text-teal-600 transition-colors">
               {/* <span className="text-teal-500"><LocationIcon /></span> */}
               <span className="text-teal-500"><LocationIcon /></span>
@@ -353,7 +347,7 @@ export default function PharmacyHeader() {
   <div className="max-w-screen-xl mx-auto px-2">
     <div className="nav-scroll flex items-center overflow-x-auto">
       {NAV_ITEMS.map((item) => (
-        <button
+        <Link to={item.path} // ← use path for navigation
           key={item.label}
           className="flex items-center gap-1.5 px-3.5 py-3.5 text-white/90 hover:text-white text-xs font-bold uppercase tracking-wide whitespace-nowrap border-b-2 border-transparent hover:border-teal-400 transition-all shrink-0 group"
         >
@@ -365,7 +359,7 @@ export default function PharmacyHeader() {
             style={{ filter: "brightness(0) invert(1)" }} // ← makes icon white color
           />
           {item.label}
-        </button>
+        </Link>
       ))}
     </div>
   </div>

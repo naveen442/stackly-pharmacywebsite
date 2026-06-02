@@ -418,10 +418,10 @@ const ProductCard = ({ product }) => (
       <div className="flex items-center justify-between mt-auto pt-2 gap-2">
         <div>
           <p className="text-[17px] font-black text-gray-900 leading-none">
-            {product.price} <span className="text-[13px]">PY6.</span>
+            {product.price} <span className="text-[13px]">RUB.</span>
           </p>
           <p className="text-[11px] font-bold text-red-500 line-through mt-0.5">
-            {product.oldPrice} PY6.
+            {product.oldPrice}.
           </p>
         </div>
         {product.inStock && (
@@ -435,7 +435,7 @@ const ProductCard = ({ product }) => (
 );
 
 /* ─── Main export ─── */
-export default function MonthlyDeals() {
+export default function Thirdbanner5() {
   const scrollRef = useRef(null);
 
   const scroll = (dir) => {

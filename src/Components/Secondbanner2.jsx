@@ -60,7 +60,7 @@ const BlogCard = ({ post }) => (
   </div>
 );
 
-export default function HealthBlog() {
+export default function Secondbanner2() {
   return (
     <section className="w-full bg-white py-10 px-4">
       <style>{`
