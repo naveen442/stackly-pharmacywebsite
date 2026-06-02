@@ -39,8 +39,8 @@ import FirstPage from "./pages/Firstpage";
 import SecondPage from "./pages/Secondpage";
 import ThirdPage from "./pages/Thirdpage";
 import FourthPage from "./pages/fourthpage";
-import FifthPage from "./pages/Fifthpage";
-import SixthPage from "./pages/Sixthpage";
+import FifthPage from "./pages/fifthpage";
+import SixthPage from "./pages/sixthpage";
 import PharmacyHeader from './Components/PharmacyHeader'
 import Footer from './Components/Footer'
 import PharmacyTagBar from './Components/PharmacyTagBar'
