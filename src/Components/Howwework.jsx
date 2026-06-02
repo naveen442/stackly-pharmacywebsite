@@ -141,7 +141,58 @@ const StepBadge = ({ n }) => (
   </span>
 );
 
-export default function HowWeWork() {
+// export default function HowWeWork() {
+//   return (
+//     <section className="w-full bg-white py-10 px-4">
+//       <style>{`
+//         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+//         .hww-root * { font-family: 'Nunito', sans-serif; }
+//       `}</style>
+
+//       <div className="hww-root max-w-screen-xl mx-auto">
+
+//         {/* ── Title ── */}
+//         <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-10">
+//           How Do We Work?
+//         </h2>
+
+//         {/* ── Steps row ── */}
+//         <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-4">
+//           {steps.map((step) => (
+//             <div
+//               key={step.id}
+//               className="flex flex-row items-start gap-4 flex-1 min-w-0"
+//             >
+//               {/* ── Icon (left) ── */}
+//               <div className="shrink-0">
+//                 <img
+//                   src={step.icon}
+//                   alt={step.title}
+//                   className="w-10 h-10 object-contain"
+//                 />
+//               </div>
+
+//               {/* ── Text (right) ── */}
+//               <div className="flex flex-col gap-1.5 min-w-0">
+//                 <div className="flex items-start gap-2">
+//                   <StepBadge n={step.id} />
+//                   <p className="text-[13.5px] font-black text-gray-800 leading-snug">
+//                     {step.title}
+//                   </p>
+//                 </div>
+//                 <p className="text-[12px] text-gray-400 font-medium leading-relaxed">
+//                   {step.desc}
+//                 </p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+const HowWeWork = () => {
   return (
     <section className="w-full bg-white py-10 px-4">
       <style>{`
@@ -191,3 +242,5 @@ export default function HowWeWork() {
     </section>
   );
 }
+
+export default HowWeWork

@@ -35,7 +35,7 @@ import './App.css'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import FirstPage from "../src/pages/Firstpage";
+import FirstPage from "./pages/Firstpage";
 import SecondPage from "./pages/Secondpage";
 import ThirdPage from "./pages/Thirdpage";
 import FourthPage from "./pages/fourthpage";
