@@ -44,7 +44,9 @@ import SixthPage from "./pages/sixthpage";
 import PharmacyHeader from './Components/PharmacyHeader'
 import Footer from './Components/Footer'
 import PharmacyTagBar from './Components/PharmacyTagBar'
-
+import SeventhPage from "./pages/Seventhpage";
+import EightPage from "./pages/Eightpage";
+import Finalpage from "./pages/Finalpage";
 function App() {
   return (
     <BrowserRouter>
@@ -57,6 +59,10 @@ function App() {
         <Route path="/Hygiene" element={<FourthPage />} />
         <Route path="/Lenses" element={<FifthPage />} />
         <Route path="/Mother-&-Child" element={<SixthPage />} />
+        <Route path="/med-supplies" element={<SeventhPage />} />
+        <Route path="/pet-products" element={<EightPage/>} />
+        <Route path="/med-equipment" element={<Finalpage />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}   
       </Routes>
       <Footer/>
     </BrowserRouter>

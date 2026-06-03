@@ -13,6 +13,7 @@ import motherChild from "../assets/Images/motherChild.svg";
 import medSupplies from "../assets/Images/medSupplies.svg";
 import petProducts from "../assets/Images/petProducts.svg";
 import medEquipment from "../assets/Images/medEquipment.svg";
+
 import { Link } from "react-router-dom";
 
 // const NAV_ITEMS = [
@@ -37,6 +38,7 @@ const NAV_ITEMS = [
   { label: "Med Supplies",           icon: medSupplies,  path: "/med-supplies" },
   { label: "Pet Products",           icon: petProducts,  path: "/pet-products" },
   { label: "Med Equipment",          icon: medEquipment, path: "/med-equipment" },
+
 ];
 const LocationIcon = () => (
   <img
